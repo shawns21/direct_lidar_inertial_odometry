@@ -21,36 +21,20 @@
     pointcloud/voxelize: true
 
     imu/calibration: true
-    # imu/intrinsics/accel/bias: [ 0.0, 0.0, 0.0 ]
-    # imu/intrinsics/accel/sm:   [ 1.,  0.,  0.,
-    #                              0.,  1.,  0.,
-    #                              0.,  0.,  1. ]
-    # imu/intrinsics/gyro/bias: [ 0.0, 0.0, 0.0 ]
-
-    # extrinsics/baselink2imu/t: [ 0.006253, -0.011775, 0.007645 ] 
-    # extrinsics/baselink2imu/R: [ 1.,  0.,  0.,
-    #                              0.,  1.,  0.,
-    #                              0.,  0.,  1. ]
-    # extrinsics/baselink2lidar/t: [ 0.,  0.,  0. ]
-    # extrinsics/baselink2lidar/R: [ 1.,  0.,  0.,
-    #                                0.,  1.,  0.,
-    #                                0.,  0.,  1. ]
-
     imu/intrinsics/accel/bias: [ 0.0, 0.0, 0.0 ]
     imu/intrinsics/accel/sm:   [ 1.,  0.,  0.,
                                  0.,  1.,  0.,
                                  0.,  0.,  1. ]
     imu/intrinsics/gyro/bias: [ 0.0, 0.0, 0.0 ]
 
-    # IMU position: same as LiDAR (0.62m forward, 0m side, 0.37m up)
-    # with 15-degree forward tilt (0.2618 radians)
-    extrinsics/baselink2imu/t: [ 0.62, 0.0, 0.37 ] 
-    extrinsics/baselink2imu/R: [ 0.9659,  0.,      0.2588,
-                                 0.,      1.,      0.,
-                                 -0.2588, 0.,      0.9659 ]
+    extrinsics/baselink2imu/t: [ 0.676253, 0., 0.647645 ] 
+    extrinsics/baselink2imu/R: [ -0.9397,  0.,  0.3420,
+                                0.,     1.,  0.,
+                                -0.3420,  0.,  0.9397 ]
 
-    # LiDAR position: from URDF joint origin
-    extrinsics/baselink2lidar/t: [ 0.62, 0.0, 0.37 ]
-    extrinsics/baselink2lidar/R: [ 0.9659,  0.,      0.2588,
-                                   0.,      1.,      0.,
-                                   -0.2588, 0.,      0.9659 ]
+    extrinsics/baselink2lidar/t: [ 0.67, 0.0, 0.64 ]
+    extrinsics/baselink2lidar/R: [ -0.9397,  0.,  0.3420,
+                                0.,     -1.,  0.,
+                                0.3420,  0.,  0.9397 ]
+
+                                

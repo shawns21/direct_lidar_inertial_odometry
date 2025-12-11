@@ -15,7 +15,7 @@
     use_sim_time: true
     frames/odom: odom
     frames/baselink: base_link
-    frames/lidar: os_sensor
+    frames/lidar: os_lidar
     frames/imu: os_imu
 
     map/waitUntilMove: false
@@ -27,7 +27,7 @@
 
     odom/imu/approximateGravity: false
     odom/imu/calibration/gyro: true
-    odom/imu/calibration/accel: true
+    odom/imu/calibration/accel: false
     odom/imu/calibration/time: 3.0
     odom/imu/bufferSize: 5000
 
