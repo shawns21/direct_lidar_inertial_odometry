@@ -20,21 +20,38 @@
     pointcloud/deskew: true
     pointcloud/voxelize: true
 
-    imu/calibration: true
-    imu/intrinsics/accel/bias: [ 0.0, 0.0, 0.0 ]
-    imu/intrinsics/accel/sm:   [ 1.,  0.,  0.,
-                                 0.,  1.,  0.,
-                                 0.,  0.,  1. ]
-    imu/intrinsics/gyro/bias: [ 0.0, 0.0, 0.0 ]
+    imu/calibration: false
+    # imu/intrinsics/accel/bias: [ 0.0, 0.0, 0.0 ]
+    # imu/intrinsics/accel/sm:   [ 1.,  0.,  0.,
+    #                              0.,  1.,  0.,
+    #                              0.,  0.,  1. ]
+    imu/intrinsics/gyro/bias: [0.024, -0.011, -0.010]
+    imu/intrinsics/accel/bias: [ 0.024042789387378555, 0.0071298815913178673, -0.1741858791057411 ]
+
+    imu/intrinsics/accel/sm: [ 0.99488613065334752,  -0.018836818796478066, -0.006966709213580973,
+                          -0.01377809432919945,   0.99853820069297172,   0.0075408785337773426,
+                          -0.015146517054241226, -0.023827195219681064,  0.98959737018031324 ]
+
 
     extrinsics/baselink2imu/t: [ 0.676253, 0., 0.647645 ] 
-    extrinsics/baselink2imu/R: [ -0.9397,  0.,  0.3420,
-                                0.,     1.,  0.,
-                                -0.3420,  0.,  0.9397 ]
+    # extrinsics/baselink2imu/R: [ -0.9397,  0.,  0.3420,
+    #                             0.,     1.,  0.,
+    #                             -0.3420,  0.,  0.9397 ]
 
     extrinsics/baselink2lidar/t: [ 0.67, 0.0, 0.64 ]
-    extrinsics/baselink2lidar/R: [ -0.9397,  0.,  0.3420,
-                                0.,     -1.,  0.,
-                                0.3420,  0.,  0.9397 ]
+    # extrinsics/baselink2lidar/R: [ -0.9397,  0.,  0.3420,
+    #                             0.,     -1.,  0.,
+    #                             0.3420,  0.,  0.9397 ]
 
-                                
+    extrinsics/baselink2imu/R: [  0.8746,  0.,  0.4848,
+                                  0.,      1.,  0.,
+                                 -0.4848,  0.,  0.8746 ] 
+
+    extrinsics/baselink2lidar/R: [  -0.8746,  0., 0.4848,
+                                    0.,     -1.,  0.,
+                                    0.4848,  0.,  0.8746 ]
+    
+    
+
+
+                                    

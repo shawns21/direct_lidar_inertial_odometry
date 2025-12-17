@@ -48,7 +48,7 @@ def generate_launch_description():
     dlio_odom_node = Node(
         package='direct_lidar_inertial_odometry',
         executable='dlio_odom_node',
-        output='screen',
+        #output='screen',
         parameters=[dlio_yaml_path, dlio_params_yaml_path],
         remappings=[
             ('pointcloud', pointcloud_topic),
@@ -89,6 +89,6 @@ def generate_launch_description():
         declare_pointcloud_topic_arg,
         declare_imu_topic_arg,
         dlio_odom_node,
-        dlio_map_node,
+        # dlio_map_node,
         rviz_node
     ])
